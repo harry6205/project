@@ -1,0 +1,193 @@
+body{
+    margin-left: 20px;
+    padding: 0;
+    background: linear-gradient(rgb(13, 243, 109),rgb(223, 11, 11));
+    align-content:center;
+    background:no-repeat url("https://lh3.googleusercontent.com/proxy/03chXPlBwaGtveDs6JQfTSaj9zC_-qcI3GctMet-c0GKmNjkCFPSSULToCQTPkUKB4d2XDXS8qEeu16TjHxExGObrKNvV7PpkClc") ;
+    background-size:1600px 450px;
+    image-resolution: 5000dpi;
+    /* "https://electricalengineeringmagazine.co.uk/wp-content/uploads/321233/shutterstock_1709519638.500x0-is.jpg" */
+    /* https://solomonpower.com.sb/wp-content/uploads/2016/02/bannet-test1.jpg */
+    /* https://dynamic-assets.hitachienergy.com/is/image/hitachiabbpowergrids/smart-substations:64-25?wid=904&hei=353&fmt=png-alpha&fit=crop%2C1 */
+}
+#image{
+    display: inline-flex;
+    margin-top: 10px;
+    
+}
+.img{
+    width: 100vh;
+}
+.left {
+    display: inline-block;
+    position: absolute;
+    left: 60px;
+    top: 10px;
+}
+
+.left img {
+    border-color: black;
+    width: 50px;
+    height: 50px;
+    filter: invert(100%);
+    border-radius: 5px;
+    transition:all 0.5s ease-in-out; 
+}
+.left img:hover{
+    transform: scale(1.2); 
+}
+
+.left div {
+    line-height: 19px;
+    font-size: 20px;
+    text-align: center;
+}
+.mid {
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+}
+.navbar {
+    display: inline-block;
+    
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 20px;
+    
+}
+
+.navbar li a {
+    color: black;
+    text-decoration: none;
+    padding: 34px 23px;
+    flex-wrap: wrap;
+    transition-duration: 600ms;
+    transition-timing-function: ease-out;
+    
+}
+.navbar li a:is(:hover, :focus) {
+    background-color:none;
+    text-decoration: underline;
+    color: black;
+    transform: scale(1.08);
+    text-shadow: 5px 5px 10px black;
+}
+
+.right {
+    position: absolute;
+    top: 35px;
+    display: inline-block;
+    right: 34px;
+    background: gray;
+}
+
+header input{
+    flex-wrap: wrap;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    border-radius: 10px;
+}
+.right {
+    position: absolute;
+    top: 35px;
+}
+#electpro{
+    border-radius: 10px;
+    z-index: -1;
+   background-blend-mode:screen;
+   position: relative;
+   animation: topmove 3s;
+   animation-delay: 0s;
+   animation-fill-mode: backwards;
+   image-rendering: auto;
+}
+.elect{
+    margin-top: 400px;
+}
+
+
+@keyframes topmove {
+    from {top: 1500px; background-color: none;}
+    to {top: 0px;}
+}
+@keyframes mymove {
+    from {right: 1500px; background-color: none;}
+    to {right: 0px;}
+}
+
+@keyframes leftmove {
+    from {left: 1500px; background-color: none;}
+    to {left: 0px;}
+}
+
+.container{
+    display: grid;
+    /* justify-content: center; */
+    justify-self: center;
+    justify-content: space-between;
+    background-color: wheat;
+    border-radius: 9px;
+    transition-duration: 600ms;
+    transition-timing-function: ease;
+    width: 85%;
+    /* height: 250px; */
+    margin-left: 104px ;
+    margin-top:50px;
+     
+}
+.container:is(:hover, :focus) {
+    transform: scale(1.08);
+    box-shadow: 5px 5px 10px black;
+    
+}
+div h1 a:hover{
+    color: blue; 
+    text-shadow: black 1px 0 10px;  
+}
+div h1 a{
+    color: black;   
+}
+div h1{
+    padding-top: 15px;
+}
+
+#item1{
+    position: relative;
+    animation: mymove 3s;
+    animation-delay: 0s;
+    animation-fill-mode: backwards;
+}
+ 
+ #item2{
+    position: relative;
+     animation: leftmove 3s;
+     animation-delay: 0s;
+     animation-fill-mode: backwards;
+ }
+ #item3{
+    position: relative;
+    animation: mymove 3s;
+    animation-delay: 0s;
+    animation-fill-mode: backwards;
+ }
+ #item4{
+     position: relative;
+     animation: leftmove 3s;
+     animation-delay: 0s;
+     animation-fill-mode: backwards;
+ }
+ #item5{
+    position: relative;
+    animation: mymove 3s;
+    animation-delay: 0s;
+    animation-fill-mode: backwards;
+}
+ #item6{
+    position: relative;
+    animation: leftmove 3s;
+    animation-delay: 0s;
+    animation-fill-mode: backwards;
+ }
